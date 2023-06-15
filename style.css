@@ -78,32 +78,18 @@ a {
 }
 form{
     margin-top: 22px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.hero__wrapper>input,
-.third-main__wrapper>input {
-    border-radius: 0;
- 
+    font-size: 0;
 }
 
 .input__search {
-    /* margin-top: 25px; */
     padding: 18px 112px 18px 20px;
     outline: none;
-    margin-right: 0;
-    float: left;
     border: none;
 }
 
 .input__postcode {
     padding: 18px 5px 18px 19px;
-    /* position: relative;
-    left: -4px; */
     outline: none;
-    float: left;
     border: none;
 }
 
@@ -111,12 +97,10 @@ form{
     padding: 18px 20px 18px 20px;
     background-color: #342c2c;
     color: #ffffff;
-    /* position: relative;
-    left: -8px; */
     cursor: pointer;
     font-size: 13px;
     letter-spacing: 0.05px;
-    float: left;
+    border: none;
 }
 
 .container {
@@ -157,11 +141,15 @@ h2 span {
 }
 
 .cars-card {
-    display: inline-block;
+    float: left;
     text-align: center;
-    margin: 62px 23px 0 0;
+    margin: 62px 26px 0 0;
+    width:calc((100% - 78px) / 4);
 
 }
+.cars-card:nth-child(4) , .cars-card:nth-child(8){
+    margin-right: 0; 
+  }
 
 .cars-card__img {
     width: 185px;
@@ -169,7 +157,6 @@ h2 span {
     padding: 21px 21px 20px 39px;
     border-radius: 4px;
     background-color: rgba(227, 227, 227, 0.73);
-    display: block;
 }
 
 .cars-card__text {
@@ -199,13 +186,14 @@ h2 span {
     color: #ffffff;
     border: none;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 .tips-card__box {
-    width: 330px;
     height: 200px;
-    display: inline-block;
-    margin: 51px 34px 0 0;
+    float: left;
+    margin: 51px 28px 0 0;
+    width:calc((100% - 80px) / 3);
 }
 
 .tips-card {
