@@ -5,7 +5,8 @@ h1,
 h2,
 h3,
 h4,
-ul,p {
+ul,
+p{
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -33,7 +34,13 @@ header {
 }
 
 nav>a {
-    padding: 41px 0 0 64px;
+    padding: 20px 0 0 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
 }
 
 /* ---------Hero Section---------*/
@@ -47,7 +54,7 @@ nav>a {
 
 .hero__wrapper {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -69,33 +76,46 @@ nav>a {
     font-weight: 500;
     color: white;
 }
+form{
+    margin-top: 22px;
+    margin-right: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 .hero__wrapper>input,
 .third-main__wrapper>input {
-    margin-top: 22px;
     border-radius: 0;
     border: none;
 }
 
 .input__search {
+    /* margin-top: 25px; */
     padding: 18px 112px 18px 20px;
+    outline: none;
+    margin-right: 0;
+    float: left;
 }
 
 .input__postcode {
     padding: 18px 5px 18px 19px;
-    position: relative;
-    left: -4px;
+    /* position: relative;
+    left: -4px; */
+    outline: none;
+    float: left;
 }
 
 .black-btn {
-    padding: 15px 25px 15px 34px;
+    padding: 18px 20px 18px 20px;
     background-color: #342c2c;
     color: #ffffff;
-    position: relative;
-    left: -8px;
+    /* position: relative;
+    left: -8px; */
     cursor: pointer;
     font-size: 13px;
     letter-spacing: 0.05px;
+    float: left;
 }
 
 .container {
@@ -139,7 +159,7 @@ h2 span {
     display: inline-block;
     text-align: center;
     margin: 62px 23px 0 0;
-    
+
 }
 
 .cars-card__img {
@@ -271,9 +291,4 @@ li {
 
 li:nth-child(3) {
     margin-right: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
 }
