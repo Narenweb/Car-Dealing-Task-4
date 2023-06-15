@@ -86,7 +86,7 @@ form{
 .hero__wrapper>input,
 .third-main__wrapper>input {
     border-radius: 0;
-    border: none;
+ 
 }
 
 .input__search {
@@ -95,6 +95,7 @@ form{
     outline: none;
     margin-right: 0;
     float: left;
+    border: none;
 }
 
 .input__postcode {
@@ -103,6 +104,7 @@ form{
     left: -4px; */
     outline: none;
     float: left;
+    border: none;
 }
 
 .black-btn {
