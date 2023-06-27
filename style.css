@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -18,32 +18,39 @@
 .font-md {
     font-size: 20px;
 }
-.font-wt-500{
+
+.font-wt-500 {
     font-weight: 500;
 }
-.font-wt-600{
+
+.font-wt-600 {
     font-weight: 600;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.border-none{
+
+.border-none {
     outline: none;
     border: none;
     cursor: pointer;
     font-weight: 500;
     letter-spacing: 0.05px;
 }
+
 .dark-btn {
     padding: 18px 20px 18px 20px;
     background-color: #342c2c;
     color: #ffffff;
     font-size: 13px;
-   
+
 }
-.dark-btn:hover{
+
+.dark-btn:hover {
     box-shadow: 0 0 10px 0 #000;
 }
+
 .warning-btn {
     padding: 20px 29px 19px;
     background-color: #f5a623;
@@ -52,16 +59,17 @@
     margin-top: 50px;
 }
 
-.warning-btn:hover{
-    box-shadow: 0 0 20px 0 #f5a623 ;
+.warning-btn:hover {
+    box-shadow: 0 0 20px 0 #f5a623;
 }
+
 /* ---------Header--------- */
 
 header {
     position: absolute;
     z-index: 1;
     width: 100%;
-   
+
 }
 
 nav>a {
@@ -78,7 +86,7 @@ a {
 
 .hero {
     background-image: url("https://i.ibb.co/LxsJtfY/background.png");
-    height: 100vh;
+    height: 550px;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -98,19 +106,20 @@ a {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
     color: white;
 }
-form{
+
+form {
     margin-top: 22px;
     font-size: 0;
 }
 
 .input__search {
     padding: 18px 112px 18px 20px;
-    cursor:auto;
+    cursor: auto;
 }
 
 .input__postcode {
     padding: 18px 5px 18px 20px;
-    cursor:auto;
+    cursor: auto;
 }
 
 .container {
@@ -149,16 +158,18 @@ h2 span {
 .cars-card {
     float: left;
     margin: 62px 26px 0 0;
-    width:calc((100% - 78px) / 4);
+    width: calc((100% - 78px) / 4);
     transition: transform 200ms ease-out;
 
 }
-.cars-card:hover{
-    transform: scale(1.05,1.05);
+
+.cars-card:hover {
+    transform: scale(1.05, 1.05);
 }
-.cars-card:nth-child(4n){
-    margin-right: 0; 
-  }
+
+.cars-card:nth-child(4n) {
+    margin-right: 0;
+}
 
 .cars-card__img {
     width: 100%;
@@ -180,11 +191,12 @@ h2 span {
     height: 200px;
     float: left;
     margin: 51px 28px 0 0;
-    width:calc((100% - 80px) / 3);
+    width: calc((100% - 80px) / 3);
     transition: transform 200ms ease-out;
 }
-.tips-card__box:hover{
-    transform: scale(1.05,1.05);
+
+.tips-card__box:hover {
+    transform: scale(1.05, 1.05);
 }
 
 .tips-card {
@@ -211,7 +223,7 @@ h2 span {
 .news-letter {
     background-image: url("https://i.ibb.co/LzKyw9Y/group-3.png");
     width: 100%;
-    height: 348px;
+    padding-bottom: 100px;
     margin-top: 80px;
     background-size: cover;
 }
@@ -242,7 +254,7 @@ footer {
     background-color: #342c2c;
 }
 
-footer li{
+footer li {
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
     font-weight: bold;
     letter-spacing: 0.06px;
@@ -258,20 +270,20 @@ footer li{
     padding-top: 5px;
 }
 
-
 li:nth-child(3) {
     margin-right: 0;
 }
-footer ul li::after{
-content: '';
- width: 0%;
- display: block;
- background-color: aqua;
- margin: auto;
- height: 2px;
- transition: 0.5s;
+
+footer ul li::after {
+    content: '';
+    width: 0%;
+    display: block;
+    background-color: aqua;
+    margin: auto;
+    height: 2px;
+    transition: 0.5s;
 }
 
-footer ul li:hover::after{
+footer ul li:hover::after {
     width: 100%;
 }
